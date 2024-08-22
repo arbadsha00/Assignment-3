@@ -21,9 +21,9 @@
               dark1: "#212121",
               dark2: "#494949",
               dark3: "#737373",
-              green2: "#494949",
-              green3: "#737373",
-              gray1: "#212121",
+              green2: "#d4f6ae",
+              green3: "#e5f3d6",
+              gray1: "#f4f4f4",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -44,14 +44,16 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <style>
-     
-    </style>
   </head>
+
   <body class="font-manrope">
-    <header class="container mx-auto ">
-      <nav>
-        <div class="navbar bg-base-100 flex justify-between items-center bg-transparent">
+    <!-- header background -->
+    <section class="bg-gradient-to-b from-gray1 to-white">
+      <header class="container mx-auto">
+        <!-- nav -->
+        <div
+          class="navbar bg-base-100 flex justify-between items-center bg-transparent py-6"
+        >
           <div>
             <div class="flex items-center gap-2">
               <i
@@ -89,7 +91,7 @@
           </div>
           <div class="flex gap-5 justify-between">
             <i
-              class="bg-white  text-dark3 fa-solid fa-magnifying-glass btn btn-circle text-center hidden md:flex"
+              class="bg-white text-dark3 fa-solid fa-magnifying-glass btn btn-circle text-center hidden md:flex"
             ></i>
             <i
               class="bg-white text-dark3 fa-solid fa-cart-shopping btn btn-circle text-center hidden md:flex"
@@ -145,8 +147,31 @@
             </div>
           </div>
         </div>
-      </nav>
-    </header>
+        <!-- banner -->
+        <section class="flex flex-col items-center justify-center gap-6 pb-10">
+          <div class="px-16">
+            <img src="./images/banner.png" alt="" class="" />
+          </div>
+          <h1
+            class="font-extrabold text-3xl md:text-4xl lg:text-6xl text-center md:w-5/6 px-2"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="text-dark2 text-center md:w-4/6 font-semibold">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+
+          <button class="btn font-bold text-xl bg-green2 rounded-full">
+            View Details
+            <i
+              class="fa-solid fa-arrow-right bg-green1 rounded-[50%] p-2 -rotate-45"
+            ></i>
+          </button>
+        </section>
+      </header>
+    </section>
     <main></main>
     <footer></footer>
   </body>
